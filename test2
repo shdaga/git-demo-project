@@ -1,2 +1,5 @@
 #!/usr/bin/perl
-`date`;
+chomp($date=`date '+%Y%m%d'`);
+if (@ARGV) {
+   $date = $ARGV[0] ;
+}
